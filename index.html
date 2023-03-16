@@ -11,16 +11,18 @@
 </head>
 <body>
 	<h1>Ross Rambotics Scouting</h1>
-	<p>This is the scouting system that was developed the Thursday of March 16th, 2023. The origninal system, although better, would not work at the tournament. Due to the this being coded very quickly, if anything doesn't work, find Nathan or Jack ASAP.</p>
+	<p>This is the scouting system that was developed the Thursday of March 16th, 2023. The origninal system, although better, would not work at the tournament. Due to the this being coded very quickly, if anything doesn't work, find Nathan or Jack ASAP or fill out the question/error form.</p>
 	<button id="button1">Scouting Input</button>
 	<button id="button2">Scouting Leaderboard</button>
 	<button id="button3">Scouting Game</button>
+	<button id="button4">Error or Question Form</button>
 	<div id="iframe-container"></div>
 	<script>
 		// Get references to the buttons and iframe container
 		const button1 = document.getElementById("button1");
 		const button2 = document.getElementById("button2");
 		const button3 = document.getElementById("button3");
+		const button 4 = document.getElementById("button4");
 		const iframeContainer = document.getElementById("iframe-container");
 		
 		// Set up event listeners for each button
@@ -32,6 +34,9 @@
 		});
 		button3.addEventListener("click", function() {
 			iframeContainer.innerHTML = '<iframe src="https://orteil.dashnet.org/cookieclicker/"></iframe>';
+		});
+		button4.addEventListener("click", function() {
+			iframeContainer.innerHTML = '<iframe src="https://forms.gle/tkxbgpR9i8cyCgJM7"></iframe>';
 		});
 	</script>
 </body>
